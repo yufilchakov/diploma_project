@@ -13,6 +13,6 @@ def notify_admin(document_id):
         'Новый документ загружен',
         f'Новый документ был загружен пользователем {document.user}.',
         settings.DEFAULT_FROM_EMAIL,
-        settings.ADMIN_EMAIL,
+        [settings.ADMIN_EMAIL],
         fail_silently=False,
         )
